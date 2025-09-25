@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario</title>
+</head>
+<body>
+    <h1>Formulario de regitro:</h1>
+    <form>
+        <fieldset> <!--para separar zonas del formulario-->
+            <legend>Información de contacto:</legend>
+            <!--cada campo del formulario suele ser nombre+campo-->
+            <label for="fnombre">Nombre:</label><br/>
+            <input type="text" id="fnombre" name="fnombre"><br/>
+            <label for="ftel">Teléfono:</label><br/>
+            <input type="tel" id="ftelefono" name="ftelef" placeholder="+34 666 66 66 66" required><br/>
+            <label for="fpwd">Contraseña:</label><br/>
+            <input type="password" id="fpwd" name="fpwd"><br/>
+        </fieldset>
+        <fieldset> 
+            <legend>Información de la reserva:</legend>
+            <label for="fdiaRerserva">Día de la reserva: </label><br/>
+            <input type="date" id="fchaReserva" name="fchaReserva" min="2025-09-23" max="2025-12-31">
+            <label for="myfile">Selecciona foto:</label>
+            <input type="file" id="myfile" name="foto">
+        </fieldset>
+
+        <input type="checkbox" id="suscripcion" name="suscripcion" value="suscripcion" checked>
+  <label for="suscripcion"> Quiero suscribirme y que me mandes spam todos los días</label><br>
+        <!--al final del form meto los botones "de acción":
+        * submit es para enviar el formulario: OBLIGATORIO
+        * reset borra todo el formulario: OPCIONAL-->
+        <input type="submit" value="Enviar formulario">
+        <input type="reset" value="Borrar formulario">
+    </form>
+</body>
+</html>
