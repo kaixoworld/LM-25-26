@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7</title>
+</head>
+<body>
+    <h1>Restaurante El Centollo</h1>
+    <h2>Haz tu reserva</h2>
+    <form>
+        <label for="fnombre">Nombre:</label>
+        <input type="text" id="fnombre" name="fnombre"/><br/>
+        <label for="femail">Correo electrónico:</label>
+        <input type="email" id="femail"/><br/>
+        <label for="ftel">Teléfono:</label>
+        <input type="tel" id="ftel" name="ftel"/><br/>
+        <label for="fdate">fecha de reserva:</label>
+        <input type="date" id="fdate" name="fdate"/><br/>
+        <label for="fhora">Franja horaria:</label>
+        <select name="horas" id="horas">
+            <option value="turno1">13:00-14:00</option>
+            <option value="turno2">14:00-15:00</option>
+            <option value="turno3">9:00-10:00</option>
+            <option value="turno4">10:00-11:00</option>
+          </select><br/>
+        <label for="fnumComensales">Comensales (min 1, max 10): </label>
+        <input type="number" id="fnumComensales" name="fnumComensales" min="1" max="10"/><br/>
+        <label for="fmantel">Color del mantel: </label>
+        <input type="color" id="fmantel" name="fmantel"/><br/>
+        <label for="fdmandas">Demandas especiales: </label>
+        <textarea rows="4" placeholder="alergias, tronas..."></textarea>
+        <input type="submit" value="Enviar"/>
+    </form>
+</body>
+</html>
