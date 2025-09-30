@@ -1,0 +1,27 @@
+/*en este archivo meto estilos para el html*/
+/*para dar estilos, lo primero es SELECCIONAR el elemento o conjunto de elementos html a los que quiero dar estilo. Esto se llama usar SELECTORES
+selector{
+    propiedad: valor;
+    propiedad2: valor2;
+    .....
+}
+Puedo dar estilos...
+1.- a todas las etiquetas html de un tipo (por ejemplo, a todos los párrafos)*/
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+strong{
+    color: #7a0fa8;
+}
+
+/*2.- a varias etiquetas html (por ejemplo, a varios  párrafos y algunos título que pueden tener estilos en común): USAMOS .CLASS*/
+.destacado{
+    background-color: #7a0fa8;
+    color:#fff;
+}
+/*3.- a una etiqueta en concreto (un párrafo concreto, por ejemplo): USAMOS #IDs
+LOS ID SON UNICOS EN LA PÁGINA
+*/
+#tituloNaranja{
+    color:#d67703;
+}
