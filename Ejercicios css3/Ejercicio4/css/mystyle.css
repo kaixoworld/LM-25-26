@@ -1,0 +1,23 @@
+/*
+Tipografía: san serif
+Todo el contenido centrado en horizontal
+El color de fondo de la web: #F3F0F7
+color letra título: #49138B
+La lista:
+    * color letra elementos: #277755
+    * quitar a los elementos de la lista el punto
+    * texto en negrita, algo grande y separados entre sí
+Al hacer :hover sobre los elementos de la lista (pasar por encima de ellos con el ratón):
+    * color de la letra es blanco
+    * El fondo del elemento es : #81C784
+    * El elemento tiene bordes redondeados
+*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #F3F0F7;
+    text-align: center;
+}
+h1{
+    color:#49138B;
+}
+

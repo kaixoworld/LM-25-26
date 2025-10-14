@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{text-align:center}
+ul{
+    color:#2F3F50;
+    border: 2px dotted #000; /*tamaño+estilo+color*/
+    padding-left:0;
+    /*para reducir el tamaño de la lista*/
+    width: 30%;
+    /*para centrar en horizontal*/
+    margin: 0 auto;
+
+}
+li{
+    list-style-type: none;
+    /*padding: 1% ; padding top+bottom+left+right*/
+    padding: 3% 6%; /*padding top+bottom del 3% y left+right del 6%*/
+}
+#mayusculas{
+    text-transform: uppercase;
+}
