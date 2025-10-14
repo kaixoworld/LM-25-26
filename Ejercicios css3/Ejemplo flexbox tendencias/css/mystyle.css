@@ -1,0 +1,28 @@
+/*SIEMPRE: para reiniciar propiedades por defecto de los navegadores*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+/*tipografía básica*/
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.zen-dots-regular {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  #sectionPrincipal{
+    background: url('../assets/fondo.jpeg') center/cover no-repeat;
+    height: 400px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+  }
+    
