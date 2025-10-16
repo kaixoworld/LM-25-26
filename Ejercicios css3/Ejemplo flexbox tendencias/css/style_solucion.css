@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+/*tipografías google fonts*/
+.zen-dots-regular {
+    font-family: "Zen Dots", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .aldrich-regular {
+    font-family: "Aldrich", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+    
+/* Header y Navegación */
+header {
+    background:  #764ba2;
+    padding: 1% 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    text-align: center;
+}
+
+
+h1 {
+    color: white;
+    margin-bottom: 1%;
+    font-size: 2em;
+}
+
+nav {
+    display: flex;
+    gap: 2%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+nav a:hover {
+    background-color: #fff;
+    color:#764ba2;
+}
+
+/* Imagen hero */
+.hero-image {
+    width: 100%;
+    height: 400px;
+    background: url('../assets/fondo.jpeg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    padding: 2%;
+}
+
+
+/* Secciones */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+section h2 {
+    color: #764BA2;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+/* Sección Presentación */
+#presentacion {
+    background: white;
+}
+
+.presentacion-contenido {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.columna {
+    flex: 1;
+    min-width: 300px;
+    background: #f9f9f9;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.columna-logo {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.columna-html {
+    background-image: url('../assets/logohtml5.png');
+}
+
+.columna-css {
+    background-image: url('../assets/logocss3.png');
+}
+
+.columna h3 {
+    color: #764BA2;
+    margin-bottom: 1%;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.columna p {
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Sección Contacto */
+#contacto {
+    background: #c3cfe2;
+}
+
+.formulario-seccion {
+    background: white;
+    padding: 3%;
+    border-radius: 1%;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 1%;
+    font-weight: 500;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 1%;
+    border: 1px solid #ddd;
+    border-radius: 1%;
+    font-family: inherit;
+    font-size: 1.25em;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: #764BA2;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkbox-group {
+    display: flex;
+    gap: 1%;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+input[type="checkbox"] {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+.checkbox-group label {
+    margin: 0;
+    cursor: pointer;
+    font-weight: normal;
+}
+#botonEnviar{
+    text-align: center;   
+}
+button {
+    background: #764ba2;
+    color: white;
+    padding: 1% 2%;
+    border: none;
+    border-radius: 2%;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+button:hover {
+    color: #764ba2;
+    background-color: white;
+}
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 0;
+}
+
