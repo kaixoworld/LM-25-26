@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tendencias en Maquetación Web 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Aldrich&family=Zen+Dots&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style_solucion.css">
+</head>
+<body>
+    <!-- Header con navegación -->
+    <header>
+        <div class="header-content">
+            <h1 class="zen-dots-regular">Tendencias Web 2025</h1>
+            <nav>
+                <a href="#presentacion">Presentación</a>
+                <a href="#contacto">Contacto</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Imagen hero full-width -->
+    <div class="hero-image zen-dots-regular">
+        Maquetación Web Moderna 2025
+    </div>
+
+    <!-- Sección Presentación -->
+    <section id="presentacion">
+        <div class="container">
+            <h2 class="zen-dots-regular">Presentación</h2>
+            <div class="presentacion-contenido">
+                <div class="columna">
+                    <div class="columna-logo columna-html"></div>
+                    <h3 class="aldrich-regular">HTML5</h3>
+                    <p>HTML5 sigue siendo el pilar fundamental de la maquetación web moderna. En 2025, vemos un enfoque renovado en la accesibilidad semántica y la estructura bien definida. Las tendencias incluyen el uso de elementos semánticos como &lt;article&gt;, &lt;section&gt; y &lt;nav&gt; para mejorar tanto la legibilidad del código como la experiencia del usuario. Además, las web components y la reutilización de código se han convertido en estándares clave para desarrolladores modernos.</p>
+                </div>
+
+                <div class="columna">
+                    <div class="columna-logo columna-css"></div>
+                    <h3 class="aldrich-regular">CSS3</h3>
+                    <p>CSS3 ha revolucionado la forma en que diseñamos interfaces. En 2025, Flexbox y Grid son imprescindibles para crear layouts responsive y eficientes. Las variables CSS (custom properties), las animaciones suaves y los gradientes dinámicos son herramientas clave en maquetación contemporánea. El diseño dark mode, las transiciones elegantes y los efectos visuales sin JavaScript son tendencias dominantes que mejoran tanto la estética como el rendimiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+        <div class="container">
+            <h2 class="zen-dots-regular">Contacto</h2>
+            <div class="formulario-seccion">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" required></textarea>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">Acepto los términos legales</label>
+                    </div>
+                    <div id="botonEnviar">
+                    <button type="submit">Enviar</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Tendencias en Maquetación Web | Diseño con Flexbox</p>
+    </footer>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Formulario enviado correctamente');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
