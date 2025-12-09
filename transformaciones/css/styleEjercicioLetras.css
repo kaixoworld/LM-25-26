@@ -1,0 +1,51 @@
+/*declaramos las tipografías*/
+@font-face{
+    font-family: 'Blomster';
+    src: url('../fonts/Blomster.ttf');
+}
+@font-face{
+    font-family: 'Earwig Factory';
+    src: url('../fonts/earwig\ factory\ rg.otf');
+}
+/*declaramos como variables los colores que vamos a usar*/
+:root{
+    --verde:#18BA9B;
+    --azul: #013F7E;
+    --azul-claro:#3398DC;
+    --morado:#9C6CCC;
+    --naranja: #E57D20;
+}
+/*ahora que están declaradas las tipografías, puedo usarlas*/
+p{  text-align: center;}
+p:nth-child(1){
+    font-size: 8em;
+    font-family: 'Earwig Factory', Arial, Helvetica, sans-serif;
+    letter-spacing: 30%;
+}
+p:nth-child(2){
+    font-size: 3.15em;
+    font-family: 'Blomster', Arial, Helvetica, sans-serif;
+    letter-spacing: 15%;
+    color:var(--azul);
+}
+p:nth-child(2) span{
+    font-size: 2em;
+}
+section{
+    width: 45%;
+    margin:0 auto;
+}
+/*accedo a las letras sin añadir "ids"*/
+/*A*/
+span:nth-child(1){color:var(--verde)}
+/*u*/
+span:nth-child(2){color:var(--azul-claro);}
+/*p*/
+span:nth-child(3){color:var(--morado);}
+/*a*/
+span:nth-child(4){color:var(--naranja);}
+
+#letraX, #letraN{ display:inline-block}
+#letraT{color:var(--verde)}
+#letraX{color:var(--azul-claro); transform:rotate(25deg)}
+#letraN{color:var(--morado);transform:rotate(-25deg)}
