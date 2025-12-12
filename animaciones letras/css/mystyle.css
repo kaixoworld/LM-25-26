@@ -1,0 +1,112 @@
+  @font-face {
+            font-family: 'Blomster';
+            src: url('fonts/Blomster.ttf');
+        }
+
+        @font-face {
+            font-family: 'Earwig Factory';
+            src: url('fonts/earwig factory rg.ttf');
+        }
+
+        section {
+            text-align: center;
+            background-color: #F2F2F2;
+            color: #fff;
+            padding: 5%;
+        }
+
+        p:nth-child(1) {
+            font-size: 9em;
+            font-family: 'Earwig Factory';
+            margin-bottom: 0;
+        }
+
+        p:nth-child(2) {
+            color: #013F7E;
+            font-size: 3em;
+            font-family: 'Blomster';
+            letter-spacing: 0.5em
+        }
+
+        span {
+            display: inline-block;
+        }
+
+        span:nth-child(1) {
+            color: #18BA9B;
+        }
+
+        span:nth-child(2) {
+            color: #3398DC;
+        }
+
+        span:nth-child(3) {
+            color: #9A69CB;
+        }
+
+        span:nth-child(4) {
+            color: #E57D20;
+        }
+
+        .subtit {
+            font-size: 2em;
+            transform: rotate(35deg)
+        }
+
+        #ultm {
+            font-size: 2em;
+            transform: rotate(-35deg)
+        }
+
+        #prim {
+            font-size: 2em;
+        }
+
+        .line-1 {
+            position: relative;
+            top: 50%;
+            width: 24em;
+            margin: 0 auto;
+            /*border-right: 2px solid #013F7E;*/
+            font-size: 180%;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+            transform: translateY(-50%);
+        }
+        .line-1:nth-child(2){opacity:0;}
+        /* Animation 1 */
+        .anim-typewriter {
+            animation: typewriter 4s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes typewriter {
+            from {
+                display:block;
+                width: 0;
+            }
+            to {
+                width: 5em;
+            }
+        }
+        /* Animation 2 */
+        .anim-typewriter2 {
+            animation: typewriter2 4s;
+            animation-delay:2s;
+            animation-fill-mode: forwards;
+        }
+
+        @keyframes typewriter2 {
+            from {
+                opacity:0;
+                width: 0;
+            }
+
+            to {
+                opacity:100;
+                width: 15em;
+            }
+        }
+
+       
