@@ -1,0 +1,42 @@
+:root{
+  --naranja: hsl(31, 77%, 52%);
+  --turquesa: hsl(184, 100%, 22%);
+  --verde: hsl(179, 100%, 13%);
+  --neutral: hsl(0, 0%, 95%);
+  --neutral-parrafos: hsla(0, 0%, 100%, 0.75);
+}
+.attribution { position:absolute; bottom:0;font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+/* 1. Centrar la caja entera en el navegador */
+body {
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    height: 100vh;           /* Altura total del navegador */
+    margin: 0;               /* Quitar márgenes por defecto */
+    font-size: 15px;
+}
+
+/* 2. Configurar main para contener 3 columnas */
+main {
+    display: flex;
+    width: 60%;              /* Ancho deseado de la caja */
+    padding: 20px;
+    overflow: hidden;
+}
+div{width: 100%;}
+/* 3. Estilos de las section en general*/
+section {
+    flex: 1;                 /* Hace que cada section ocupe el mismo espacio */
+    padding: 20px;
+    text-align: center;      /* Centra el texto dentro de la section */
+}
+section:nth-child(1){
+    background-color: var(--naranja);
+    border-radius: 5% 0 0 5%;
+}
+section:nth-child(2){background-color: var(--turquesa);}
+section:nth-child(3){
+    background-color: var(--verde);
+    border-radius: 0 5% 5% 0;
+}
