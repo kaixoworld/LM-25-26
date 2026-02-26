@@ -84,7 +84,6 @@ section:nth-child(3) {
     border-radius: 0 5% 5% 0;
 }
 
-
 section p {
     padding-top: 3%;
     padding-bottom: 3%;
@@ -105,3 +104,19 @@ section:nth-child(2) a{ color: var(--turquesa);}
 section:nth-child(2) a:hover{ border: 2px solid var(--neutral);background-color: var(--turquesa);color:var(--neutral)}
 section:nth-child(3) a{ color: var(--verde);}
 section:nth-child(3) a:hover{ border: 2px solid var(--neutral);background-color: var(--verde);color:var(--neutral)}
+
+/*MOBILE*/
+@media screen and (max-width:375px) {
+    main{width:80%; flex-direction: column; border-radius:25px}
+    .attribution {display:none;}
+    section{padding: 20% 5%;}
+section:nth-child(1) {
+   
+    border-radius: 5% 5% 0% 0%;
+}
+
+
+section:nth-child(3) {
+    border-radius: 0% 0% 5% 5%;
+}
+}
